@@ -1,0 +1,36 @@
+{
+  "extends": "airbnb-base/legacy",
+  "envs": ["browser"],
+  "globals": {
+    "__inline": false,
+    "__uri": false,
+    "__DEBUG": false
+  },
+  "rules": {
+    "vars-on-top": 0,
+    "no-undef": 1,
+
+    "import/no-unresolved": 0,
+    "func-names": 0,
+
+    "no-console": 0,
+    "no-underscore-dangle": 0,
+    "no-param-reassign": 0,
+    "camelcase": 0,
+    "padded-blocks": 0,
+
+    "keyword-spacing": 0,
+    "space-before-function-paren": 0,
+    "space-before-blocks": 0,
+
+    "newline-per-chained-call": 0,
+
+    "max-len": [2, {
+      "code": 100,
+      "ignoreTrailingComments": true
+    }],
+    "wrap-iife": [2, "inside"],
+    "no-use-before-define": [2, "nofunc"],
+    "no-restricted-syntax": [2, "WithStatement", "LabeledStatement"]
+  }
+}
