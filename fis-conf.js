@@ -126,7 +126,7 @@ fis.match('/src/(**)', {
 })
 
 // 全局 runtimes 文件
-.match('/src/runtimes/**/*.{js,ts}', {
+.match('/src/runtimes/**/*.{js,ts,vue}', {
   packTo: '/src/runtimes/runtimes.js'
 })
 
