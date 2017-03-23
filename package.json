@@ -4,8 +4,8 @@
   "description": "An example for hackernews using fis3 toolchain, typescript, vue etc.",
   "main": "index.js",
   "scripts": {
-    "dev": "rm -rf dist && fis3 release -d . -wL --clean",
-    "build": "rm -rf dist && fis3 release prod -d .",
+    "dev": "rm -rf dist && fis3 release -d . -wL",
+    "build": "rm -rf dist && fis3 release prod -d . --clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
