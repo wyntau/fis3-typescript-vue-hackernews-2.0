@@ -164,7 +164,7 @@ fis
 })
 
 /// optimize
-.match('/src/**.{ts,js,vue}', {
+.match('/{src,node_modules}/**.{ts,js,vue}', {
   optimizer: fis.plugin('uglify-js', {
     compress: {
       warnings: false,
