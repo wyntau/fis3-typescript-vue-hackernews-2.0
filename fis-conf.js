@@ -182,11 +182,11 @@ fis
     mangle: true
   })
 })
-.match('/src/**.{css,vue:css}', {
+.match('/src/**.{css,vue:css,vue:stylus}', {
   release: false,
   optimizer: fis.plugin('clean-css')
 })
-.match('/src/**.html', {
+.match('/src/**.{html,vue:html}', {
   release: false,
   optimizer: fis.plugin('dfy-html-minifier', {
     removeComments: true,
