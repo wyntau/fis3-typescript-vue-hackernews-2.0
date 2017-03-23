@@ -1,3 +1,5 @@
+/dist
+
 fis-conf.js
 
 src/**/plugins/**/*.js

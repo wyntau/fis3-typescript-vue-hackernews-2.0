@@ -1,6 +1,10 @@
+var execSync = require('child_process').execSync;
+
 var pkg = require('./package.json');
 
 var staticsUrl = '';
+
+var branch = execSync('git rev-parse --abbrev-ref HEAD').toString('utf8').replace(/\n*$/, '');
 
 var MOD_CACHE = process.env.CACHE;
 var DEBUG = process.env.DEBUG;
@@ -45,10 +49,7 @@ fis.set('project.fileType.text', 'vue');
 
 fis.hook('commonjs', {
   baseUrl: 'src',
-  extList: ['.ts', '.js', '.vue'],
-  paths: {
-    'vue': '/node_modules/vue/dist/vue.js'
-  }
+  extList: ['.ts', '.js', '.vue']
 });
 
 /// ======================== develop environment ========================
@@ -56,7 +57,7 @@ fis.hook('commonjs', {
 // 发布地址 => development
 fis.match('/src/(**)', {
   release: '/dist/$1',
-  url: '/fis3-typescript-vue-hackernews-2.0/dist/$1'
+  url: (branch === 'gh-pages' ? '/fis3-typescript-vue-hackernews-2.0' : '') + '/dist/$1'
 })
 
 .match('/src/(**).vue', {
@@ -65,7 +66,7 @@ fis.match('/src/(**)', {
   isTsLike: true,
   parser: [
     fis.plugin('vue-component', {
-      runtimeOnly: false,
+      runtimeOnly: true,
       extractCSS: false,
       cssScopedFlag: null
     })
