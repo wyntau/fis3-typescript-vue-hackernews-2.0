@@ -193,11 +193,13 @@ fis
   })
 })
 .match('/src/index.html', {
+  useHash: false,
+  release: '/dist/index.html',
   optimizer: fis.plugin('dfy-html-minifier', {
     removeComments: false,
     collapseWhitespace: true
   })
-})
+}, true)
 
 // all in one pack
 .match('::package', {
