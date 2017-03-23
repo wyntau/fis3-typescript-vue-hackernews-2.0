@@ -1,0 +1,49 @@
+{
+  "name": "fis3-typescript-vue-hackernews-2.0",
+  "version": "1.0.0",
+  "description": "An example for hackernews using fis3 toolchain, typescript, vue etc.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rm -rf dist && fis3 release -d . -wL --clean",
+    "build": "rm -rf dist && fis3 release prod -d .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Treri/fis3-typescript-vue-hackernews-2.0.git"
+  },
+  "keywords": [
+    "hackernews",
+    "vue",
+    "fis3",
+    "typescript",
+    "fis",
+    "example"
+  ],
+  "author": "Treri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Treri/fis3-typescript-vue-hackernews-2.0/issues"
+  },
+  "homepage": "https://github.com/Treri/fis3-typescript-vue-hackernews-2.0#readme",
+  "devDependencies": {
+    "fis3": "^3.4.32",
+    "fis3-hook-commonjs": "^0.1.26",
+    "fis3-hook-node_modules": "^2.2.8",
+    "fis3-parser-stylus": "^0.1.3",
+    "fis3-parser-typescript": "^1.1.1",
+    "fis3-parser-vue-component": "^5.4.0",
+    "fis3-postpackager-loader": "^2.1.4",
+    "fis3-postprocessor-autoprefixer": "^1.0.0"
+  },
+  "dependencies": {
+    "es6-promise": "^4.1.0",
+    "firebase": "^3.7.3",
+    "process": "^0.11.9",
+    "tslib": "^1.6.0",
+    "vue": "^2.2.4",
+    "vue-router": "^2.3.0",
+    "vuex": "^2.2.1",
+    "vuex-router-sync": "^4.1.2"
+  }
+}

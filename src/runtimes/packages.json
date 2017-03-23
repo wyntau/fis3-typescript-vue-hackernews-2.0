@@ -1,0 +1,10 @@
+[
+  "es6-promise",
+  "vue",
+  "vuex",
+  "vue-router",
+  "vuex-router-sync",
+  "process",
+  "tslib",
+  "firebase"
+]
