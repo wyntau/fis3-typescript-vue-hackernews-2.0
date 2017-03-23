@@ -56,6 +56,7 @@ fis.hook('commonjs', {
 // 发布地址 => development
 fis.match('/src/(**)', {
   release: '/dist/$1',
+  url: '/fis3-typescript-vue-hackernews-2.0/dist/$1'
 })
 
 .match('/src/(**).vue', {
