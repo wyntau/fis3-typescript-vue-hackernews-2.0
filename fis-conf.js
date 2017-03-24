@@ -49,7 +49,10 @@ fis.set('project.fileType.text', 'vue');
 
 fis.hook('commonjs', {
   baseUrl: 'src',
-  extList: ['.ts', '.js', '.vue']
+  extList: ['.ts', '.js', '.vue'],
+  paths: {
+    'vue': '/node_modules/vue/dist/vue.js'
+  }
 });
 
 /// ======================== develop environment ========================
