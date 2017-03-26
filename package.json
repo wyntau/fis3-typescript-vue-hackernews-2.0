@@ -45,7 +45,8 @@
     "fis3-postpackager-loader": "^2.1.4",
     "fis3-postprocessor-autoprefixer": "^1.0.0",
     "tslint": "^4.5.1",
-    "typescript": "^2.2.1"
+    "typescript": "^2.2.1",
+    "vconsole": "^2.5.2"
   },
   "dependencies": {
     "es6-promise": "^4.1.0",

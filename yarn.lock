@@ -3348,6 +3348,10 @@ vary@~1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/vary/download/vary-1.0.1.tgz#99e4981566a286118dfb2b817357df7993376d10"
 
+vconsole@^2.5.2:
+  version "2.5.2"
+  resolved "http://registry.npm.taobao.org/vconsole/download/vconsole-2.5.2.tgz#07092d9a459552d89604553cef512308553848df"
+
 verror@1.3.6:
   version "1.3.6"
   resolved "http://registry.npm.taobao.org/verror/download/verror-1.3.6.tgz#cff5df12946d297d2baaefaa2689e25be01c005c"

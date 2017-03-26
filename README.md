@@ -16,6 +16,7 @@
 - 支持 localStorage 缓存前端模块, 使用修改版的 [mod.js](src/plugins/mod/mod.js)
 - 支持模块合并打包, 具体配置见 [fis-conf.js](fis-conf.js) 中关于 packTo 的配置
 - 支持 git commit 之前, ESLint, TSLint 以及检查 git commit msg 格式, 详见 [.git-hooks](.git-hooks)
+- 支持 dev 环境下, 使用 vconsole 控制台
 
 ### 模块合并打包
 
@@ -33,10 +34,9 @@ npm run dev
 ```
 
 ### Build
-通过 `MOD_CACHE` 控制是否开启 localStorage 缓存, build模块下默认打开
 
 ```
-[MOD_CACHE=true] npm run build
+npm run build
 ```
 
 ### 感谢
