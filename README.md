@@ -25,6 +25,20 @@
 - `boot.js` 和 `app.js` 项目启动文件, 打包为 `init.js`
 - 通过 router 异步加载的各个 view 下的所有文件, 分别合并进各自的文件夹下, 合成 `views/NAME/NAME-pack.js`
 
+### Development
+
+```sh
+npm run yarn
+npm run dev
+```
+
+### Build
+通过 `MOD_CACHE` 控制是否开启 localStorage 缓存, build模块下默认打开
+
+```
+[MOD_CACHE=true] npm run build
+```
+
 ### 感谢
 绝大代码部分来自 vue-hacker-news-2.0, 删除了SSR部分, 并将代码改为 ts, 以及适合于 FIS3 处理
 

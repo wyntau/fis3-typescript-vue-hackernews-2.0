@@ -2,8 +2,6 @@ var execSync = require('child_process').execSync;
 
 var pkg = require('./package.json');
 
-var staticsUrl = '';
-
 var branch = execSync('git rev-parse --abbrev-ref HEAD').toString('utf8').replace(/\n*$/, '');
 
 var MOD_CACHE = process.env.CACHE;
