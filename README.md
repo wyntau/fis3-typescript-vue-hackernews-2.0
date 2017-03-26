@@ -15,6 +15,7 @@
 - fis3-hook-node_modules 支持加载 npm 模块
 - 支持 localStorage 缓存前端模块, 使用修改版的 [mod.js](src/plugins/mod/mod.js)
 - 支持模块合并打包, 具体配置见 [fis-conf.js](fis-conf.js) 中关于 packTo 的配置
+- 支持 git commit 之前, ESLint, TSLint 以及检查 git commit msg 格式, 详见 [.git-hooks](.git-hooks)
 
 ### 模块合并打包
 
