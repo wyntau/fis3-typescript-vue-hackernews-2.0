@@ -134,7 +134,7 @@ fis.match('/src/(**)', {
 
 // 各个页面自用的文件, 打包成一个文件, 减少http请求
 .match('/src/views/(*)/**.{js,ts,vue}', {
-  packTo: '/src/views/$1/$1-pack.js'
+  packTo: '/src/views/$1-pack.js'
 })
 
 .match('::package', {

@@ -24,7 +24,7 @@
 - 全局的 npm 依赖模块, 通过在 `src/runtimes/packages.json` 中定义, fis3 编译时, 会将出现在此文件中的模块打包成 `runtimes/packages.js`, 如果没出现在此文件中, 则采用正常的异步加载策略
 - 全局的项目依赖模块, 都在 `runtimes` 文件夹下, 编译时, 打包为 `runtimes/runtimes.js` 文件
 - `boot.js` 和 `app.js` 项目启动文件, 打包为 `init.js`
-- 通过 router 异步加载的各个 view 下的所有文件, 分别合并进各自的文件夹下, 合成 `views/NAME/NAME-pack.js`
+- 通过 router 异步加载的各个 view 下的所有文件, 分别合并进各自的文件夹下, 合成 `views/NAME-pack.js`
 
 ### Development
 
