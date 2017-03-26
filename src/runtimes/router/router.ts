@@ -1,5 +1,5 @@
 import Vue = require('vue');
-import VueRouter = require('vue-router')
+import VueRouter = require('vue-router');
 
 Vue.use(VueRouter);
 
@@ -19,11 +19,11 @@ const createListView = name => (resolve) => {
   require.async('views/CreateListView', function (m) {
     resolve(m.createListView(name));
   });
-}
+};
 
 export default new VueRouter({
   mode: 'hash',
-  // scrollBehavior: () => ({ y: 0 }),
+  scrollBehavior: (to, from, savedPosition) => ({ x: 0, y: 0 }),
   routes: [
     {
       path: '/top/:page(\\d+)?',
@@ -56,4 +56,4 @@ export default new VueRouter({
     {
       path: '*', redirect: '/top' }
   ]
-})
+});
