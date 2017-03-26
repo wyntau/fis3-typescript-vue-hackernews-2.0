@@ -12,7 +12,7 @@ Object.keys(filters).forEach(key => {
 import router from 'runtimes/router/router';
 import store from 'runtimes/store/store';
 
-import App = require('runtimes/views/app.vue');
+import App from 'runtimes/views/app.vue';
 
 // sync the router with the vuex store.
 // this registers `store.state.route`

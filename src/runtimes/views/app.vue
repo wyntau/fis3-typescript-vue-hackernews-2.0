@@ -102,3 +102,7 @@ a
     .github
       display none
 </style>
+
+<script>
+export default {}
+</script>
