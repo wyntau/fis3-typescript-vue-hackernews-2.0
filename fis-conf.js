@@ -64,7 +64,6 @@ fis.match('/src/(**)', {
 .match('/src/(**).vue', {
   id: '$1',
   isMod: true,
-  isTsLike: true,
   parser: [
     fis.plugin('vue-component', {
       runtimeOnly: true,
