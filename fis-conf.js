@@ -109,6 +109,10 @@ fis.match('/src/(**)', {
   useSameNameRequire: false
 })
 
+.match('/node_modules/**.map', {
+  release: false
+})
+
 // test configs
 // do not wrap test related files
 .match('/src/{karma.conf,requirejs.conf}.js', {
