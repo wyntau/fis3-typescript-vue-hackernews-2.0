@@ -16,7 +16,7 @@ Vue.use(VueRouter);
 // babel-plugin-syntax-dynamic-import.
 
 const createListView = name => (resolve) => {
-  require.async('views/CreateListView', function (m) {
+  require.async('views/createListView', function (m) {
     resolve(m.createListView(name));
   });
 };
@@ -44,13 +44,13 @@ export default new VueRouter({
     {
       path: '/item/:id(\\d+)',
       component: function (resolve) {
-        require.async('views/ItemView.vue', resolve);
+        require.async('views/item/item.vue', resolve);
       }
     },
     {
       path: '/user/:id',
       component: function (resolve) {
-        require.async('views/UserView.vue', resolve);
+        require.async('views/user/user.vue', resolve);
       }
     },
     {
