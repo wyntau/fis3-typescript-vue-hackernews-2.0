@@ -127,12 +127,12 @@ fis.match('/src/(**)', {
 
 // init 初始化文件
 .match('/src/{boot,app}.{js,ts,vue}', {
-  packTo: '/src/init.js'
+  packTo: '/src/runtimes/init.js'
 })
 
 // 全局 runtimes 文件
 .match('/src/runtimes/**/*.{js,ts,vue}', {
-  packTo: '/src/runtimes/runtimes.js'
+  packTo: '/src/runtimes/init.js'
 })
 
 // 各个页面自用的文件, 打包成一个文件, 减少http请求
