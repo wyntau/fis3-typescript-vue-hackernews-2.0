@@ -22,9 +22,10 @@ require.config({
   // Karma serves files under /base, which is the basePath from your config file
   baseUrl: '/base/dist',
 
-  paths: {
-    'node_modules': '../node_modules'
-  },
+  // // do not have to set node_modules path.
+  // paths: {
+  //   'node_modules': '../node_modules'
+  // },
 
   // dynamically load all test files
   deps: allTestFiles,
