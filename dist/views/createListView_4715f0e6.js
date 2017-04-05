@@ -1,0 +1,1 @@
+define("views/createListView",function(e,t){"use strict";function i(e){return{name:e+"-stories-view",render:function(t){return t(n.default,{props:{type:e}})}}}var n=e("components/ItemList");t.createListView=i});
