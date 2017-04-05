@@ -112,10 +112,21 @@ fis.match('/src/(**)', {
   release: false
 })
 
-// test configs
-// do not wrap test related files
-.match('/src/{karma.conf,requirejs.conf}.js', {
-  isMod: false
+.match('::package', {
+  postpackager: fis.plugin('loader', {
+    resourceType: 'mod',
+    useInlineMap: true // 资源映射表内嵌
+  })
+});
+
+/// ======================== production envionment ========================
+
+fis
+.media('prod')
+
+/// do not release test related files
+.match('/src/**.spec.{js,ts}', {
+  release: false
 })
 
 /// === packTo 配置, 将一些文件打包合并在一起
@@ -138,26 +149,6 @@ fis.match('/src/(**)', {
 // 各个页面自用的文件, 打包成一个文件, 减少http请求
 .match('/src/views/(*)/**.{js,ts,vue}', {
   packTo: '/src/views/$1-pack.js'
-})
-
-.match('::package', {
-  postpackager: fis.plugin('loader', {
-    resourceType: 'mod',
-    useInlineMap: true // 资源映射表内嵌
-  })
-});
-
-/// ======================== production envionment ========================
-
-fis
-.media('prod')
-
-/// do not release test related files
-.match('/src/**.spec.{js,ts}', {
-  release: false
-})
-.match('/src/{karma.conf,requirejs.conf}.js', {
-  release: false
 })
 
 // 使用hash
