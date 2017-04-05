@@ -1,8 +1,7 @@
 /dist
 
 fis-conf.js
+karma.conf.js
+requirejs.conf.js
 
 src/**/plugins/**/*.js
-
-src/**/karma.conf.js
-src/**/requirejs.conf.js

@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '..',
+    basePath: '.',
 
 
     // frameworks to use
@@ -15,8 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'dist/requirejs.conf.js',
-      {pattern: 'dist/node_modules/**/*.js', included: false},
+      'requirejs.conf.js',
       {pattern: 'dist/**/*.js', included: false}
     ],
 
@@ -75,5 +74,5 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity
-  })
-}
+  });
+};
