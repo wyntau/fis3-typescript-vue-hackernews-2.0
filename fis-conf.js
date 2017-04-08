@@ -39,8 +39,8 @@ if(process.platform === 'linux'){
 }
 fis.set('project.files', ['src/**']);
 fis.set('project.ignore', fis.get('project.ignore').concat([
-  '**/*.md',
-  '**/*.json'
+  '**.md',
+  '**.json'
 ]));
 fis.set('project.md5Length', 8);
 fis.set('project.fileType.text', 'vue');
@@ -142,7 +142,7 @@ fis
 })
 
 // 全局 runtimes 文件
-.match('/src/runtimes/**/*.{js,ts,vue}', {
+.match('/src/runtimes/**.{js,ts,vue}', {
   packTo: '/src/runtimes/init.js'
 })
 
