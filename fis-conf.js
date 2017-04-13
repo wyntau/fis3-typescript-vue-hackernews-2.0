@@ -26,6 +26,7 @@ var autoprefixerOption = {
 };
 
 var typescriptCompilerOption = {
+  sourceMap: true,
   baseUrl: 'src',
   noEmitHelpers: true,
   importHelpers: true,
